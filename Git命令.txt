@@ -26,7 +26,8 @@ git reset HEAD 要移除的文件名
 git reset HEAD .
 
 从仓库和工作区同时移除文件
-git rm -f 文件名
+git rm 文件名
+git rm -r 文件夹名
 
 从仓库移除此文件，但保留在工作区中
 git rm --cached 文件名
