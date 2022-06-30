@@ -12,6 +12,9 @@ git add .
 提交更新
 git commit -m "描述信息"
 
+上传远程仓库
+git push
+
 跳过暂存区提交更新 加-a
 git commit -a -m "描述信息"
 
@@ -48,3 +51,34 @@ git reset --hard <ID>
 git reflog --pretty=oneline
 4、跳转最新版本
 git reset --hard <ID>
+
+绑定ssh
+ssh-keygen -t rsa -b 4096 -C "邮箱"
+本地计算机用户/.ssh文件夹中用记事本将id_rsa.pub文件打开，复制内容到GitHub设置中
+
+检测ssh
+ssh -T git@github.com
+
+克隆仓库到本地
+git clone 远程仓库地址
+
+查看分支列表
+git branch
+
+修改分支名称
+git branch -M 新名字
+
+创建分支
+git branch 分支名称
+
+切换分支
+git checkout 分支名称
+
+复合命令创建新分支并立即切换
+git checkout -b 分支名称
+
+合并分支
+切换到主分支执行git merge login
+
+删除分支
+git branch -d 分支名称
