@@ -83,3 +83,19 @@ git checkout -b 分支名称
 
 删除分支
 git branch -d 分支名称
+
+本地分支推送到远程仓库
+git push -u 远程仓库别名 本地分支名:远程分支名
+git pushi -u origin 分支名
+
+查看远程分支
+git remote show 远程仓库名称
+
+下载远程仓库中的分支
+git checkout 远程分支名称
+
+从远程仓库拉取最新文件
+git pull
+
+删除远程分支
+git push 远程仓库名称 --delete 远程分支名称
