@@ -1,0 +1,7 @@
+1、使用客户端连接服务器端
+mysql.exe -h127.0.0.1 -P3306 -uroot -p
+-h host IP地址/域名
+-P port 端口
+-u user 用户名 管理员默认为root
+-p password 密码
+quit 退出连接
